@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ecf9ff;
+}
+.clock-container {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  border-radius: 20px;
+  transition: 0.2s ease-out;
+}
+.title {
+  color: #555;
+  margin: 5% 0 10%;
+}
+.clock {
+  width: 17rem;
+  height: 17rem;
+  border-radius: 50%;
+  box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset,
+    rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset,
+    rgba(136, 165, 191, 0.48) 6px 2px 16px 0px,
+    rgba(255, 255, 255, 0.8) -6px -2px 16px 0px;
+  margin-bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #666;
+  font-weight: 600;
+  font-size: 50px;
+  border: 10px solid whitesmoke;
+  outline: 1px solid rgba(255, 255, 254);
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  gap: 8%;
+  justify-content: center;
+  align-items: center;
+}
+.btn {
+  padding: 15px 35px;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  margin-bottom: 30px;
+  transition: 0.2s ease-out;
+}
+.start-btn {
+  background-color: #7fb77e;
+}
+.start-btn:hover {
+  background-color: #689567;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+.pause-btn {
+  background-color: yellow;
+  color: #666;
+}
+.pause-btn:hover {
+  background-color: rgb(218, 218, 0);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  color: #fff;
+}
+.reset-btn {
+  background-color: crimson;
+}
+.reset-btn:hover {
+  background-color: rgb(206, 37, 70);
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media (max-width: 900px) {
+  .clock-container {
+    width: 50%;
+  }
+}
+@media (max-width: 700px) {
+  .clock-container {
+    width: 60%;
+  }
+}
+@media (max-width: 500px) {
+  .clock-container {
+    width: 70%;
+  }
+}
